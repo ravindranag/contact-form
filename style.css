@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+:root {
+    --body: #082032;
+    --accent: #FF4C29;
+    --nav: #334756;
+    --form: #2C394B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: var(--body);
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: var(--nav);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.mobel-icon {
+    height: 30px;
+}
+
+.nav-logo {
+    width: 40px;
+}
+
+.nav-close {
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    width: 100%;
+    height: 100vh;
+    background: #000000cc;
+    transition: all 250ms;
+}
+
+.nav-menu {
+    position: absolute;
+    transform-origin: 100% 0;
+    width: max-content;
+    height: 100vh;
+    top: 0;
+    right: -300px;
+    background: #2C394B;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 500ms;
+}
+
+.nav-menu-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu-links a {
+    margin: 10px 0;
+    padding: 5px;
+    transition: all 300ms;
+}
+
+.made {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo,
+.logo-mobel {
+    display: flex;
+    align-items: center;
+}
+
+.logo>*,
+.logo-mobel>* {
+    margin: 0 5px;
+}
+
+.logo-mobel {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.show {
+    right: 0;
+}
+
+form {
+    margin: 100px auto 0;
+    padding: 32px 20px;
+    display: grid;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    background: var(--form);
+    border-radius: 16px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    margin: 12px 0 32px;
+    border: none;
+    border: 1px solid var(--form);
+    border-bottom-color: #fff;
+    background: inherit;
+    color: #fff;
+    font-size: 18px;
+}
+
+textarea {
+    color: #fff;
+    font-size: 18px;
+    resize: none;
+    margin: 12px 0 32px;
+    background: var(--form);
+    outline: none;
+    border: none;
+    border: 1px solid var(--form);
+    border-bottom-color: #fff;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+    padding: 10px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=text]:focus-within,
+input[type=email]:focus-within,
+input[type=tel]:focus-within,
+textarea:focus {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid var(--accent);
+    background: var(--body);
+}
+
+input:-internal-autofill-selected {
+    background: #2C394B !important;
+}
+
+input[type=submit] {
+    font-family: 'Varela Round';
+    border: none;
+    padding: 10px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+footer {
+    width: 100%;
+    padding: 32px 0;
+    /* position: absolute;
+    bottom: 0; */
+    text-align: center;
+}
+
+@media (hover) {
+    input[type=submit]:hover {
+        background: #CC3D21;
+    }
+    .nav-menu-links a:hover {
+        color: #D7E8FF;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav-menu {
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: inherit;
+        padding: 0;
+    }
+    .nav-menu-links {
+        margin: 0 32px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-menu-links a {
+        margin: 0 10px;
+    }
+    .mobel-icon,
+    .logo-mobel,
+    .nav-close {
+        display: none;
+    }
+}

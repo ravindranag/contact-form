@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L50 0L50 50L0 50L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Contacts-icon">
+    <path d="M0 0L50 0L50 50L0 50L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M9 0C4.038 0 0 4.037 0 9L0 33C0 37.963 4.038 42 9 42L33 42C33.338 42 33.671 41.9784 34 41.9414L34 0.0585938C33.671 0.0215936 33.338 0 33 0L9 0L9 0ZM36 0.525391L36 10L42 10L42 9C42 5.09 39.49 1.76439 36 0.525391L36 0.525391ZM18 8C25.168 8 31 13.832 31 21C31 28.168 25.168 34 18 34C10.832 34 5 28.168 5 21C5 13.832 10.832 8 18 8L18 8ZM18 10C11.935 10 7 14.935 7 21C7 23.814 8.07141 26.3772 9.81641 28.3242C11.8894 26.2252 14.852 25 18 25C21.14 25 24.1135 26.2223 26.1875 28.3203C27.9295 26.3733 29 23.812 29 21C29 14.935 24.065 10 18 10L18 10ZM36 12L36 20L42 20L42 12L36 12L36 12ZM18 14.5C20.481 14.5 22.5 16.519 22.5 19C22.5 21.481 20.481 23.5 18 23.5C15.519 23.5 13.5 21.481 13.5 19C13.5 16.519 15.519 14.5 18 14.5L18 14.5ZM36 22L36 30L42 30L42 22L36 22L36 22ZM36 32L36 41.4746C39.49 40.2356 42 36.91 42 33L42 32L36 32L36 32Z" transform="translate(4 4)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
